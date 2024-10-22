@@ -1,0 +1,42 @@
+h2 {
+    color: darkblue;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: lightgray;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
