@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import * as THREE from 'three';
     let scene,
         camera,
@@ -194,4 +194,4 @@
 <div id="instructions">
     Use arrow keys or WASD to control the plane. Collect yellow cubes to score
     points!
-</div>
+</div> -->

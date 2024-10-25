@@ -1,6 +1,7 @@
 <script lang="ts">
     import { browser } from "$app/environment";
     import { onMount } from "svelte";
+    import HomePage from "./Michael Barrr Homepage.svg";
 
     // Array of rainbow colors
     let colors = [
@@ -47,6 +48,7 @@
     if (browser) spawnImage();
 </script>
 
+<img class ="bkg" src={HomePage} alt="" srcset="" />
 <div class="rainbow-text">
     <b>
         {#each text as letter, i}
@@ -65,14 +67,23 @@
     /* Load Comic Sans from Google Fonts */
     @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400&display=swap");
 
+    .bkg {
+        position: fixed;
+        top: 50vh;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
     .rainbow-text {
         font-family: "Comic Neue", sans-serif;
         font-size: 3rem;
         display: inline-block;
 
         position: fixed;
-        top: 50%;
-        left: 50%;
+        right: 20px;
+        bottom: 20px;
         transform: translate(-50%, -50%);
         width: fit-content;
     }
