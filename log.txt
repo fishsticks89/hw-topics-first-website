@@ -1,0 +1,8 @@
+Part 3
+
+url: https://topics.michaelbarr.dev/
+github url: https://github.com/fishsticks89/hw-topics-first-website
+
+cookie feature: the state of elmo bouncing when you click is saved
+
+database feature: the number of times the elmo has been clicked on all clients is shown in the bottom left
